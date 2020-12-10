@@ -65,3 +65,18 @@ destroyer(
   "bugati",
   "trojan"
 );
+
+//4. PigLatin
+
+function translatePigLatin(str) {
+  const vowels = /^[^aeiou]+/;
+  let text = str.match(vowels);
+  let answer =
+    text != null
+      ? str.replace(text, "").concat(text).concat("ay")
+      : str.concat("way");
+  console.log(text);
+  console.log(answer);
+}
+
+translatePigLatin("consonant");
