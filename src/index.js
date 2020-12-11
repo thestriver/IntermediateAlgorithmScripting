@@ -11,11 +11,14 @@ function pairElement(str) {
   let splitArr = str.split("");
   console.log(splitArr);
 
-  //map and add
-  let answer = splitArr.map((x) => [x, pairs[x]]);
-  console.log(answer);
+  //map and add each letter to its specified pair
+  let answerArr = splitArr.map((DNAcharacter) => [
+    DNAcharacter,
+    pairs[DNAcharacter]
+  ]);
+  console.log(answerArr);
 
-  return str;
+  return answerArr;
 }
 
 pairElement("ATCGA");
