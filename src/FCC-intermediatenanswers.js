@@ -80,3 +80,19 @@ function translatePigLatin(str) {
 }
 
 translatePigLatin("consonant");
+
+//5. Search and Replace
+function myReplace(str, before, after) {
+  // console.log(/^[A-Z]/.test(before));
+  let replaced = after.charAt(0).toUpperCase().concat(after.substring(1));
+  let lowerPlaced = after.charAt(0).toLowerCase().concat(after.substring(1));
+  if (/^[A-Z]/.test(before)) {
+    after = replaced;
+  } else {
+    after = lowerPlaced;
+  }
+  // return str.replace(before, after)
+  console.log(str.replace(before, after));
+}
+
+myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
