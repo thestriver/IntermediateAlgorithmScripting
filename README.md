@@ -1,2 +1,2 @@
-# IntermediateAlgorithmScripting
-Created with CodeSandbox
+Intermediate Algorithm Scripting - Problems and Solutions.
+Using FreeCodeCamp challenges 
